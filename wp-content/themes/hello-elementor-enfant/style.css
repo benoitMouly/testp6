@@ -1,0 +1,388 @@
+/*
+Theme Name: Hello Elementor Enfant
+Theme URI: https://elementor.com/hello-theme/?utm_source=wp-themes&utm_campaign=theme-uri&utm_medium=wp-dash
+Template: hello-elementor
+Author: Elementor Team
+Author URI: https://elementor.com/?utm_source=wp-themes&utm_campaign=author-uri&utm_medium=wp-dash
+Description: Hello Elementor is a lightweight and minimalist WordPress theme that was built specifically to work seamlessly with the Elementor site builder plugin. The theme is free, open-source, and designed for users who want a flexible, easy-to-use, and customizable website. The theme, which is optimized for performance, provides a solid foundation for users to build their own unique designs using the Elementor drag-and-drop site builder. Its simplicity and flexibility make it a great choice for both beginners and experienced Web Creators.
+Tags: accessibility-ready,flexible-header,custom-colors,custom-menu,custom-logo,featured-images,rtl-language-support,threaded-comments,translation-ready
+Version: 3.1.0.1719823476
+Updated: 2024-07-01 08:44:36
+*/
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* -----------------------------------------------------------    HEADER     ---------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* STYLES DU HEADER : */
+
+.bouton-commander {
+    background-color : #E0B9B4;
+    line-height: 4.5em;
+    height : 80px!important;
+    width : 236px;
+}
+
+.bouton-commander:hover {
+    background-color : #C02E44;
+}
+
+/* STYLES SUR AFFICHAGE LIEN " admin " : */
+.hfe-menu-item {
+    box-sizing: border-box;
+    padding: 0px 30px 0px 30px !important;
+    color: black;
+    justify-content: center;
+}
+
+.hfe-menu-item:hover {
+    box-sizing: border-box;
+    padding: 0px 30px 0px 21px !important;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* -----------------------------------------------------------    FOOTER     ---------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* STYLES SUR BANDEAU DE 16 CANETTES (voir fonction dans functions.php : */
+.ajust-compo-footer {
+    display: flex;
+    width: auto;
+    max-width: 1440px;
+    height: auto;
+    max-height: 205px;
+    position: relative;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+.image-footer {
+    position: relative;
+    margin:70px -20px 0px -60px;
+    height: auto;
+}
+
+/* STYLES SUR LIEN DES MENTIONS LEGALES : */
+.mentions-legales-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width:auto;
+    height:60px;
+    padding: 20px 0px;
+    background-color: white;
+    color: black;
+    justify-content: center;
+}
+
+.mentions-legales-footer:hover {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ---------------------------------------------------------    PAGE ACCUEIL  :   ----------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+#conteneur-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#feuille-gauche,
+#canette-centre,
+#feuille-droite {
+    position: relative;
+}
+
+#feuille-gauche {
+    z-index: 1;
+    margin-right: -13%;
+    max-width: 25%;
+}
+
+#canette-centre {
+    z-index: 2;
+    max-width: 30%;
+}
+
+#feuille-droite {
+    z-index: 1;
+    margin-left: -14%;
+    max-width: 25%;
+}
+
+#feuille-gauche img,
+#canette-centre img,
+#feuille-droite img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------    PAGE " NOUS RENCONTRER "  :   ------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* AJUSTEMENT DE L'EMPLACEMENT DE LA FLEUR A GAUCHE DU TITRE : */
+
+/* --------- STYLES DU FORMULAIRE : ----------*/
+.wpforms-submit-container {
+    display: flex;
+    justify-content: center;
+}
+
+.wpforms-field-label {
+    font-size:20px !important;
+    font-weight: 400 !important;
+}
+
+.wpforms-required-label[aria-hidden="true"] {
+    display: none;
+}
+
+#wpforms-937 {
+    padding-bottom:80px;
+}
+
+#wpforms-937-field_1 {   /* ---- champ E-mail -----*/
+    border-style: none;
+    border-radius:7px ;
+    height : 71px;
+}
+
+#wpforms-937-field_2 {   /* ---- champ Message -----*/
+    border-style: none;
+    border-radius:7px !important;
+    height : 237px;
+}
+
+#wpforms-937-field_3{    /* ---- champ Nom -----*/
+    border-style: none;
+    border-radius:7px !important;
+    height : 71px;
+}
+
+#wpforms-submit-937 {    /* ---- Bouton ENVOYER -----*/
+    height: 55px;
+    width: 198px;
+    border-radius: 5px;
+    color: white;
+    background-color: #E0B9B4 !important;
+}
+
+#wpforms-submit-937:hover {
+    color: white;
+    background-color: #C02E44 !important;
+}
+
+.wpforms-submit {
+    font-family: 'Syne', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    line-height: 24px;
+}
+
+.wpforms-container-full textarea {
+    resize: none !important;
+}
+
+/* AJUSTEMENT DE L'EMPLACEMENT DE LA FLEUR-DECO DU FORMULAIRE : */
+#deco-form {
+    margin-right: 26%;
+    margin-top: -15%;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------    PAGE " COMMANDER "  :  --------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+#container_commander{
+    display:flex;
+    justify-content: center;
+    width:auto;
+    max-width: 1440px;
+}
+
+.form_commande {
+    display:flex;
+    flex-direction: column;
+    width:860px;
+}
+
+.quantites_boissons {
+    display:flex;
+    justify-content: space-between;
+    padding : 20px 9% 0px 9%!important;
+    width:860px;
+}
+
+.quantite_fraise ,.quantite_pamplemousse , .quantite_framboise , .quantite_citron {
+    display: flex;
+    justify-content: center;
+}
+
+.champ-saisie-qte {
+    width: 38px !important;
+    height:55px;
+    border:none!important;
+    border-radius:0px!important;
+    padding: 0px 0px 0px 3px !important;
+}
+
+.separation-horizontale {
+    width: 860px;
+    height: 1px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+.saisie-coordonnees {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin: 40px 0px 30px 0px;
+}
+
+.saisie-coordonnees p {
+    margin: 0px;
+}
+
+.colonne1,.colonne2 {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    margin:0px !important;
+    padding:0px !important;
+}
+
+.colonne1 h2,.colonne2 h2 {
+    margin :0px;
+}
+
+.colonne1 p,.colonne2 p {
+    margin-top: 23px;
+}
+
+.separation-verticale {
+    width: 1px;
+    height:447px;
+    background-color: white;
+    padding:0px 1px;
+}
+
+.wpcf7 form {
+    color: white;
+    font-size: 20px!important;
+    font-weight: 400!important;
+}
+
+.champ-form{
+    margin:10px 5px 0px 0px !important;
+    padding: 0px !important;
+    border-radius:7px !important;
+    width:383px !important;
+    height:71px !important;
+    border:none!important;
+}
+
+.valid_commande {
+    display: flex;
+    justify-content: center;
+}
+
+#bouton_commander {
+    width: 198px!important;
+    height: 55px!important;
+    border:none;
+    border-radius: 5px!important;
+    background-color: #E0B9B4;
+    margin:30px 0px 50px 0px;
+}
+
+#bouton_commander:hover {
+    background-color: #C02E44;
+}
+
+/* -------------------------------------------------    MEDIA QUERIES PAGE " COMMANDER "  :  --------------------------------------------------- */
+
+@media (max-width: 1024px) {
+
+    .form_commande {
+        display:flex;
+        flex-direction: column;
+        max-width: 800px!important;
+
+    }
+    .quantites_boissons {
+        display:flex;
+        justify-content: space-between;
+        max-width: 800px!important;
+    }
+
+    .colonne1,.colonne2 {
+        padding:0px !important;
+        width: 350px!important;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .champ-saisie-qte {
+        width: 50px !important;
+        height:75px;
+        border:none!important;
+        border-radius:0px!important;
+        padding: 0px 0px 0px 3px !important;
+    }
+
+    .form_commande {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+
+    .quantites_boissons {
+        display:flex;
+        justify-content: space-between !important;
+        min-width:300px !important ;
+        max-width:400px !important;
+    }
+
+    .saisie-coordonnees {
+        display:flex;
+        flex-direction:column;
+        margin: 40px 0px 0px 30px;
+        width:700px !important;
+        height: 1000px !important;
+    }
+    .separation-verticale {
+         display: none;
+    }
+
+    .separation-horizontale {
+        display: none;
+    }
+
+    .colonne1,.colonne2 {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        margin:0px !important;
+        padding:0px !important;
+    }
+    
+    .valid_commande {
+        display: flex;
+        justify-content: left;
+        margin-left: 120px;
+    }
+}
